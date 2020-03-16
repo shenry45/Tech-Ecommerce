@@ -1,9 +1,23 @@
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+#root {
+    width: 80%;
+    margin: 0 auto;
+}
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 h3, h4, h5 {
     color: #838383;
+    font-size: 1.6rem;
 }
 p {
     color: #000;
@@ -11,17 +25,26 @@ p {
 hr {
     color: #000;
 }
-.main div {
+.main>div {
     background-color: #cacaca;
     color: #fff;
-    padding: 50px 100px;
 
-    div.sections, div.tags{
+    &.sections, &.tags{
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-evenly;
     }
-    div.tags {
-        background-color: lightgreen
+    &.tags {
+        background-color: lightgreen;
+
+        div {
+            width: 100%;
+            background-color:#fff;
+            padding: 50px 100px;
+
+            &:nth-child(2){
+                padding: auto 30px;
+                clip-path: polygon(25% 0, 100% 0%, 75% 100%, 0 100%);
+            }
+        }
     }
 }

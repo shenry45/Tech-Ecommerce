@@ -1,3 +1,12 @@
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+#root {
+  width: 80%;
+  margin: 0 auto;
+}
 h1,
 h2,
 h3,
@@ -5,11 +14,16 @@ h4,
 h5,
 h6 {
   margin: 0;
+  font-family: Calibri, Helvetica, Arial, sans-serif;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 h3,
 h4,
 h5 {
   color: #838383;
+  font-size: 1.6rem;
 }
 p {
   color: #000;
@@ -17,24 +31,31 @@ p {
 hr {
   color: #000;
 }
-.main div {
+.main > div {
   background-color: #cacaca;
   color: #fff;
-  padding: 50px 100px;
 }
-.main div div.sections,
-.main div div.tags {
+.main > div.sections,
+.main > div.tags {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-evenly;
 }
-.main div div.tags {
+.main > div.tags {
   background-color: lightgreen;
+}
+.main > div.tags div {
+  width: 100%;
+  background-color: #fff;
+  padding: 50px 100px;
+}
+.main > div.tags div:nth-child(2) {
+  padding: auto 30px;
+  clip-path: polygon(25% 0, 100% 0%, 75% 100%, 0 100%);
 }
 header {
   display: flex;
   justify-content: space-between;
-  padding: 10px 30px;
+  padding: 0 0 0 30px;
   background-color: #f3f3f3;
 }
 header:first-child div {
@@ -45,6 +66,7 @@ header:last-child div {
 }
 header p {
   margin: 0;
+  padding: 20px 0;
 }
 header div {
   display: flex;
@@ -52,21 +74,25 @@ header div {
 }
 #hero {
   z-index: 999;
-  overflow: hidden;
-  display: flex;
-  flex-flow: row nowrap;
-  padding: 100px 200px;
+  padding: 50px;
+  text-align: center;
 }
-#hero div {
-  width: 50%;
+#hero svg {
+  width: 75px;
+  height: auto;
+}
+#hero p {
+  margin: 0;
+  font-weight: 100;
 }
 #hero .parallax {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 10%;
   z-index: -1;
-  width: 100%;
+  width: 80%;
   height: 100%;
+  margin: 0 auto;
   background-image: url('../img/hero.jpg');
   background-position: top;
   background-size: cover;
