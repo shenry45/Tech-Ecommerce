@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, MenuItem, Button } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 
 const Header = () => {
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -9,9 +9,14 @@ const Header = () => {
     }
 
     return <header>
-        <div><p>Logo</p></div>
         <div>
-            <Button onClick={openMenu}>Menu</Button>
+            <p>"From junk to new opportunities."</p>
+        </div>
+        <div>
+            <Button>Menu</Button>
+            <Button>Process</Button>
+            <Button>About</Button>
+            <Button>Contact</Button>
         </div>
     </header>
 }
