@@ -1,3 +1,71 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+p,
+button {
+  color: #fff;
+}
+button {
+  cursor: pointer;
+}
 /* GLOBAL COMPONENTS */
+#top {
+  background: url('../img/PCB_Scrap.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  background-attachment: scroll;
+  background-color: #000;
+  display: flex;
+  flex-flow: column nowrap;
+}
+#top svg#header-round {
+  width: 100%;
+  height: auto;
+  margin-bottom: -10px;
+}
+#top h1 {
+  font-family: 'Open Sans', Verdana, Helvetica;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 auto;
+  font-size: 70px;
+  font-weight: 800;
+  padding-top: 100px;
+}
+#top p {
+  margin: 0 auto;
+  color: #fff;
+  font-size: 21px;
+  padding-bottom: 100px;
+}
+#top header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 30px 10%;
+}
+#top header svg {
+  width: 75px;
+  height: 75px;
+}
+#top header #menu {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: right;
+  align-items: center;
+}
+#top header #menu button {
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 0 30px;
+}
+#top header #menu button:hover {
+  color: #e7ffeb;
+}
 /* PAGE SPECIFIC */
 /* SUPPORT COMPONENTS */
