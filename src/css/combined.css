@@ -9,6 +9,19 @@ button {
 button {
   cursor: pointer;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #227000;
+  text-transform: uppercase;
+}
+h3 {
+  text-align: center;
+  font-size: 24px;
+}
 /* GLOBAL COMPONENTS */
 #top {
   background: url('../img/PCB_Scrap.jpg');
@@ -19,6 +32,7 @@ button {
   background-color: #000;
   display: flex;
   flex-flow: column nowrap;
+  padding: 0;
 }
 #top svg#header-round {
   width: 100%;
@@ -68,4 +82,20 @@ button {
   color: #e7ffeb;
 }
 /* PAGE SPECIFIC */
+section {
+  padding: 30px 25%;
+}
 /* SUPPORT COMPONENTS */
+div.slider {
+  width: 100%;
+  border: 1px solid #000;
+}
+div.slider img {
+  width: 100%;
+}
+div.slider button {
+  color: black;
+  position: relative;
+  top: 100px;
+  left: 0;
+}

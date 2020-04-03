@@ -1,8 +1,7 @@
 import React from 'react';
 
 import Header from './components/Header';
-import Hero from './components/index/Hero';
-import IndexPage from './pages/IndexPage';
+import Process from './components/Process';
 
 import './css/combined.css';
 
@@ -17,7 +16,8 @@ function App() {
           <path fill="#FFFFFF" d="M500,25.191C312.88,25.191,139.982,14.386,0,0v34.16h1000V0C860.018,14.386,687.12,25.191,500,25.191z"/>
         </svg>
       </section>
-      <IndexPage />
+      <Process />
+
     </div>
   );
 }
