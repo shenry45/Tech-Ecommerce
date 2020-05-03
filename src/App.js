@@ -2,6 +2,7 @@ import React from 'react';
 
 import Header from './components/Header';
 import Process from './components/Process';
+import Stats from './components/Stats';
 
 import './css/combined.css';
 
@@ -17,7 +18,9 @@ function App() {
         </svg>
       </section>
       <Process />
-
+      <Stats />
+      {/* <About />
+      <Contact /> */}
     </div>
   );
 }

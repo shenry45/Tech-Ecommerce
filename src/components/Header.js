@@ -14,18 +14,10 @@ const Header = () => {
             </svg>
         </div>
         <div id="menu">
-            <a href="#">
-                <button>Process</button>
-            </a>
-            <a href="#">
-                <button>Services</button>
-            </a>
-            <a href="#">
-                <button>About</button>
-            </a>
-            <a href="#">
-                <button>Contact</button>
-            </a>
+            <button>Process</button>
+            <button>Services</button>
+            <button>About</button>
+            <button>Contact</button>
         </div>
     </header>
 }

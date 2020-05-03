@@ -1,15 +1,29 @@
-div.slider {
-    width: 100%;
-    border: 1px solid #000;
+.process {
+    div {
+        width: 48%;
+        text-align: left;
 
-    img {
-        width: 100%;
-    }
+        h3 {
+            text-align: left;
+        }
+        
+        &.slider {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+        
+            .slide-left, .slide-right {
+                padding: 10px;
+                font-size: 30px;
+                line-height: 24px;
+                background: #f2f2f2;
+            }
 
-    button {
-        color: black;
-        position: relative;
-        top: 100px;
-        left: 0;
+            img {
+                width: 100%;
+                user-select: none;
+            }
+        }
     }
 }
