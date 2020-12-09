@@ -1,0 +1,24 @@
+.process div {
+  width: 48%;
+  text-align: left;
+}
+.process div h3 {
+  text-align: left;
+}
+.process div.slider {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.process div.slider .slide-left,
+.process div.slider .slide-right {
+  padding: 10px;
+  font-size: 30px;
+  line-height: 24px;
+  background: #f2f2f2;
+}
+.process div.slider img {
+  width: 100%;
+  user-select: none;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import RecycleMachine from '../img/recycling-machine.jpg';
-import PCBScrap from '../img/PCB_Scrap2.jpg';
+import PCBScrap from '../img/old-hardware-scrap-bin.jpg';
 import ScrapMachine from '../img/Industrialshredder.jpg'
 
 const images = [
