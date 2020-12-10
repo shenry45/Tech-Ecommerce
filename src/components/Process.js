@@ -48,7 +48,7 @@ class Process extends React.Component {
         return <section className="two-col process">
             <div>
                 <h3>The Process</h3>
-                <p>Est aliqua officia eiusmod enim tempor excepteur nisi ipsum commodo elit commodo. Sint deserunt ut cupidatat veniam nisi est esse reprehenderit cupidatat sunt. Duis anim nostrud enim consequat in ea quis veniam id. Eu proident dolor laboris sunt quis esse eiusmod ipsum reprehenderit officia consequat nulla occaecat nisi.</p>
+                <p>Starting from our local landfill providing scrap electronics we sort based on type. Each type of electronic device get binned for the most efficient recycling process. PCBs are ground down for recycle pulp and raw materials are smelted for sale. All proceeds are poured into our facility and helping plant trees.</p>
             </div>
             <div className="slider">
                 <div className="slide-left" onClick={this.slideLeft}>

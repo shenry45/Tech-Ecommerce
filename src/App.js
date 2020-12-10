@@ -3,6 +3,8 @@ import React from 'react';
 import Header from './components/Header';
 import Process from './components/Process';
 import Stats from './components/Stats';
+import Counters from './components/Counters';
+import Footer from './components/Footer';
 
 import './css/combined.css';
 
@@ -19,8 +21,10 @@ function App() {
       </section>
       <Process />
       <Stats />
+      <Counters />
       {/* <About />
       <Contact /> */}
+      <Footer />
     </div>
   );
 }

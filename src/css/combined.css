@@ -20,17 +20,30 @@ h5,
 h6 {
   color: #227000;
   text-transform: uppercase;
+  font-family: 'Open Sans', Verdana, Helvetica;
   margin-top: 0;
 }
 h3 {
   text-align: center;
   font-size: 24px;
 }
+img {
+  user-select: none;
+}
 .two-col {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+}
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 110px 0 0;
+  padding: 20px 20%;
+  background-color: #f2f2f2;
 }
 /* GLOBAL COMPONENTS */
 #top {
@@ -97,7 +110,7 @@ section {
 }
 .stats .progress {
   width: 100%;
-  background-color: lightgrey;
+  background-color: #f2f2f2;
   border-radius: 15px;
   margin: 55px 0;
 }
@@ -105,7 +118,7 @@ section {
   width: 75%;
   height: 20px;
   background-color: #00e607;
-  border-radius: 15px;
+  border-radius: 15px 0 0 15px;
 }
 .stats .progress .level img {
   position: relative;
@@ -129,6 +142,7 @@ section {
 }
 .process div.slider .slide-left,
 .process div.slider .slide-right {
+  cursor: pointer;
   padding: 10px;
   font-size: 30px;
   line-height: 24px;
@@ -136,5 +150,22 @@ section {
 }
 .process div.slider img {
   width: 100%;
-  user-select: none;
+}
+section.counters {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+section.counters div {
+  flex-basis: 30%;
+  min-width: 200px;
+}
+section.counters div p {
+  text-align: center;
+}
+section.counters div span {
+  font-size: 2.6em;
+  color: #000;
+  font-weight: bold;
 }
